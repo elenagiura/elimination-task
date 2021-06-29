@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<!--font-family: 'Roboto', sans-serif;-->
+	<link href="./css/style.css" type="text/css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+</head>
+<body>
+	<!--Task 1-->
+	<header class='wrapper'>
+		<div id='percents'><div>0%</div></div>
+		<div>
+			<h5>New York State</h5>
+			<h2>Request for Contact</h2>
+		</div>
+		
+	</header>
+	<main class='wrapper'>
+		<div class='checked name'>1</div>
+		<div class='question'>
+			<label for='name'>First Name</label>
+			<input id='name' type='first-name' name='first-name'/>
+			
+		</div>
+		<div class='checked last'>2</div>
+		<div class='question'>
+			<label for='last'>Last Name</label>
+			<input id='last' type='last-name' name='last-name'/>
+			
+		</div>
+		<div class='checked email'>3</div>
+		<div class='question'>
+			<label for='email'>Email Address</label>
+				<input id='email' type='email' name='email'/>
+			
+		</div>
+		<div class='checked time'>4</div>
+		<div class='question'>
+			<label id='time'>What is the best time to contact you?
+				<input type='radio' name='time' value="monday-3pm"/><span>Monday 3pm</span>
+				<input type='radio' name='time' value="tuesday-3pm"/><span>Tuesday 3pm</span>
+			</label>
+		</div>
+		<!--Task 2a-->
+		<div class='checked check'>5</div>
+		<div class='question'>
+			<label for='check'>Parentheses check</label>
+			<input id='check' type='text' name='string-check'/>
+			<div class='rules'>
+				<p>Checking if sentence has parentheses, and if the parentheses in the string are correctly matched and each one is accounted for.</p>
+			</div>
+		</div>
+		<!--Task 2b-->
+		<div class='checked pass'>6</div>
+		<div class='question'>
+			<label for='pass'>Password</label>
+			<input id='pass' type='password' name='password'/>
+			<div class='rules'>
+				<p>The password should be at least 8 characters long</p>
+				<p>The password should have at least one uppercase letter</p>
+				<p>The password should have at least one lowercase letter</p>
+				<p>The password should have at least one digit</p>
+				<p>The password should have at least one special character</p>
+			</div>
+		</div>
+		<input id='submit' type='submit' value='Submit'/>
+	</main>
+
+	<script src='./js/main.js' type="text/javascript"></script>
+</body>
+</html>
